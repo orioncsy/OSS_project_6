@@ -1,0 +1,32 @@
+.menu{
+    height: 4cm;
+}
+
+.inst{
+    font-size: 16px;
+    color: grey;
+    font-weight: bold;
+    text-align: center;
+}
+
+#made{
+    font-size: 45px;
+    color: darkseagreen;
+    text-align:left;
+    background-color: white;
+    padding: 1.5cm;
+    border-color:lightgray;
+}
+
+#take{
+    font-size: 45px;
+    color: firebrick;
+    text-align: left;
+    background-color: white;
+    padding: 1.5cm;
+    border-color:lightgray;
+}
+
+body{
+    background-color:whitesmoke;
+}
