@@ -1,0 +1,13 @@
+.menu{
+    height: 4cm;
+}
+
+.question{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+body{
+    background-color:whitesmoke;
+    margin: auto;
+}
