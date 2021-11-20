@@ -49,8 +49,22 @@
     background-color: white;
 }
 
-.answer{
-    width: 20cm;
+.scoreBox{
+    height: 3cm;
+    width: 6cm;
+    padding: 20px;
+    border-radius: 0.5em;
+    border: 1px solid #dddddd;
+    background-color: white;
+}
+
+.answerBox{
+    width: 10cm;
+    height: 1cm;
+    padding: 5px 0px 0px 20px;
+    border-radius: 0.5em;
+    border: 1px solid #dddddd;
+    background-color: white;
 }
 
 .wrapper{

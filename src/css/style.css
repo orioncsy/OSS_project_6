@@ -1,12 +1,21 @@
 .menu{
     height: 4cm;
 }
+.logo{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1cm;
+}
 
 .inst{
     font-size: 16px;
     color: grey;
     font-weight: bold;
     text-align: center;
+}
+
+.highlight{
+    font-weight: bold;
 }
 
 #make{
@@ -27,6 +36,11 @@
     border-color:lightgray;
 }
 
+.wrapper{
+    padding: 0% 15% 0% 15%;
+}
+
 body{
     background-color:whitesmoke;
 }
+

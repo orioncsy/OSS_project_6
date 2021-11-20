@@ -1,13 +1,43 @@
 .menu{
     height: 4cm;
 }
-
+.logo{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1cm;
+}
 .question{
     font-size: 16px;
     font-weight: bold;
 }
 
+.addItem{
+    color:rgba(66, 66, 250, 0.836);
+}
+
+.qtext{
+    font-weight: bold;
+    font-size: 1cm;
+}
+
+
+.answerSubject{
+    width: 20cm;
+}
+
+.answerObject{
+    width: 20cm;
+}
+
+
+.point{
+    width:10cm;
+}
+
+.wrapper{
+    padding: 0% 15% 0% 15%;
+}
+
 body{
     background-color:whitesmoke;
-    margin: auto;
 }
