@@ -1,5 +1,3 @@
-// test
-
 let addbtn = document.getElementById("add_question_btn");
 let cpltbtn0 = document.getElementById("complete_btn_0");
 let cpltbtn1 =  document.getElementById("complete_btn_1");
@@ -29,4 +27,14 @@ function addSbjQuestion() {
 addbtn.addEventListener("click", () => {
     addSbjQuestion();
 });
+
+//addItem 구현
+document.querySelector(".addItem").addEventListener("click", () =>
+{
+    choice = document.querySelector('.choice');
+    clone = choice.cloneNode(true);
+    choiceList = document.querySelector(".choiceList")
+    choiceList.appendChild(clone);
+});
+
 
