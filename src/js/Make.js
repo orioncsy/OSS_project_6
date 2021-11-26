@@ -29,12 +29,14 @@ addbtn.addEventListener("click", () => {
 });
 
 //addItem 구현
-document.querySelector(".addItem").addEventListener("click", () =>
-{
-    choice = document.querySelector('.choice');
-    clone = choice.cloneNode(true);
-    choiceList = document.querySelector(".choiceList")
-    choiceList.appendChild(clone);
+document.querySelectorAll(".answerObject").forEach( objAns => {
+    let addItem = objAns.querySelector(".addItem");
+    addItem.addEventListener("click", () => {
+        let choiceList = objAns.querySelector(".choiceList");
+        let choice = choiceList.querySelector(".choice");
+        let clone = choice.cloneNode(true);
+        choiceList.appendChild(clone);
+    });
 });
 
 
