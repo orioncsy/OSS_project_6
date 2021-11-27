@@ -102,12 +102,64 @@ document.querySelectorAll(".answerObject").forEach( objAns => {
     addItem.addEventListener("click", () => addAnswerItem(objAns));
 });
 
+document.querySelectorAll(".btn-success").forEach(btn => {btn.addEventListener('click',() => {
+    
+    //문제가 객관식이면 true, 주관식이면 false 저장
+    let typeList = document.querySelectorAll(".qType");
+    
+    //문제 저장
+    let contentList = document.querySelectorAll(".content .form-control");
+    
+    //해설 저장
+    let commentList = document.querySelectorAll(".comment .form-control");
+    //question.comment = comment
+    
+    //주관식 정답 저장
+    let subAnsList = document.querySelectorAll(".answerSubject .form-control");
+    //alert(subAnsList[1].value);
+
+    //객관식 정답 저장
+    let choiceList = document.querySelectorAll(".answerObject .choiceList");
+
+    let qNum = typeList.length; //문제 개수 저장
+    let sNum = 0, oNum = 0; // 주관식 개수, 객관식 개수
+    localStorage.setItem('qNum', qNum);
+    for (let i = 0; i < qNum; i++){
+        let question = {}
+        let qType = typeList[i].checked
+        question.qType = qType;
+        question.content = contentList[i].value;
+        question.comment = commentList[i].value;
+        if (qType === true){
+            let answer = []
+            choiceList[oNum].querySelectorAll(".form-check-input").forEach((node, index) => {
+                if (node.checked){
+                    answer.push(index+1);
+            }})
+            let choice = []
+            choiceList[oNum].querySelectorAll(".form-control").forEach((node) => {
+                choice.push(node.value);
+            })
+            question.answer = answer
+            question.choice = choice
+            oNum+=1;
+        }
+        else{
+            question.answer = subAnsList[sNum].value
+            sNum+=1;
+        }
+        localStorage.setItem(i+1, JSON.stringify(question))
+    }
+
+});})
+
 function addAnswerItem(answer) {
     let choiceList = answer.querySelector(".choiceList");
     let choice = choiceList.querySelector(".choice");
     let clone = choice.cloneNode(true);
     choiceList.appendChild(clone);
 };
+
 
 window.addEventListener("load", () => {
     addSbjQuestion(); // init with first question
