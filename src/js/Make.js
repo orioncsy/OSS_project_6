@@ -5,10 +5,11 @@ let cpltbtn1 =  document.getElementById("complete_btn_1");
 let qarea = document.getElementById("q_area");
 let qidx = 1;
 
+
 //문항 추가
 function addSbjQuestion() {
     let div = document.createElement("div");
-    div.className = "question question_sbj";
+    div.className = "question my-6";
     
     let qtext = document.createElement("div");
     qtext.className = "qtext";
@@ -48,6 +49,7 @@ function addSbjQuestion() {
 addbtn.addEventListener("click", () => {
     addSbjQuestion();
 });
+
 
 //문제 유형 선택
 document.querySelectorAll(".question").forEach( question => qtypeHandler(question));
@@ -96,6 +98,7 @@ function qtypeHandler(question) {
     
 };
 
+
 //addItem 구현
 document.querySelectorAll(".answerObject").forEach( objAns => {
     let addItem = objAns.querySelector(".addItem");
@@ -109,10 +112,12 @@ function addAnswerItem(answer) {
     choiceList.appendChild(clone);
 };
 
+//init
 window.addEventListener("load", () => {
     addSbjQuestion(); // init with first question
 });
 
+//save
 document.querySelectorAll(".btn-success").forEach(btn => {btn.addEventListener('click',() => {
 
     //문제가 객관식이면 Objective, 주관식이면 Subjective 저장
@@ -156,6 +161,6 @@ document.querySelectorAll(".btn-success").forEach(btn => {btn.addEventListener('
             sNum+=1;
         }
         localStorage.setItem(i+1, JSON.stringify(question))
-        //alert(localStorage.getItem(i+1))
+        alert(localStorage.getItem(i+1))
     }
 });})
