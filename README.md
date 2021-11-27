@@ -1,6 +1,6 @@
 # OSS_project_6
 
-## Team number 6
+## Team No.6 Members
 ```js
 Seung-yun Chae(orioncsy@g.skku.edu, 2015312350)
 Jiwan Park(wldhks302@g.skku.edu, 2015318837)
@@ -12,7 +12,7 @@ Dongkun Kim(kdk0@g.skku.edu, 2020312600)
 ```js
 "SWOT : SoftWare Oriented Test"
 
-Swot means "study hard for test"
+Swot means 'study hard for test'
 ```
 
 ## Screenshots of App
