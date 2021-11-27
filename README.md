@@ -29,6 +29,9 @@ If you want to make objective questions just like bellow.
 
 ### 3. Take Test Page
 
+If you choose "Take Test", you can see the question and write answer.
+![image](./image/Take_test.png)
+
 ### 4. Correct System Page
 
 
