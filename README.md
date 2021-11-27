@@ -1,28 +1,25 @@
 # OSS_project_6
 
 ## Team No.6 Members
-```js
-Seung-yun Chae(orioncsy@g.skku.edu, 2015312350)
-Jiwan Park(wldhks302@g.skku.edu, 2015318837)
-Dongkun Kim(kdk0@g.skku.edu, 2020312600)
-```
+- Seung-yun Chae(orioncsy@g.skku.edu, 2015312350)
+- Jiwan Park(wldhks302@g.skku.edu, 2015318837)
+- Dongkun Kim(kdk0@g.skku.edu, 2020312600)
 
 ## Name of Application
 
 ```js
 "SWOT : SoftWare Oriented Test"
-
 Swot means 'study hard for test'
 ```
 
 ## Screenshots of App
 
-### Start Page
+### 1. Start Page
 
 When you enter the page at first,
 ![image](./image/start_page.png)
 
-### Make Test Page
+### 2. Make Test Page
 
 If you choose "Make Test", you can make subjective questions just like bellow.
 ![image](./image/Make_subjective_question.png)
@@ -30,9 +27,9 @@ If you choose "Make Test", you can make subjective questions just like bellow.
 If you want to make objective questions just like bellow.
 ![image](./image/Make_objective_question.png)
 
-### Take Test Page
+### 3. Take Test Page
 
-### Correct System Page
+### 4. Correct System Page
 
 
 ## Link to the demo video
