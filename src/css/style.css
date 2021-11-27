@@ -19,26 +19,31 @@
 }
 
 .highlight{
+    font-size: 60px;
     font-weight: bold;
 }
 
 #make{
+    height: 7cm;
+    width: 7cm;
     font-size: 45px;
     color: darkseagreen;
-    text-align:left;
+    text-align : center;
     background-color: white;
-    padding: 1.5cm;
     border-color:lightgray;
 }
 
 #take{
+    height: 7cm;
+    width: 7cm;
     font-size: 45px;
     color: firebrick;
-    text-align: left;
+    text-align: center;
     background-color: white;
-    padding: 1.5cm;
     border-color:lightgray;
 }
+
+
 
 .wrapper{
     padding: 0% 15% 0% 15%;
