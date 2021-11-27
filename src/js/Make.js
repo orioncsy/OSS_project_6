@@ -68,7 +68,7 @@ function qtypeHandler(question) {
                                 <label for="exampleFormControlInput1" class="form-label">Answer</label>\
                                 <div class="input-group choice">\
                                     <div class="input-group-text">\
-                                        <input class="form-check-input me-2" type="checkbox" value="">\
+                                        <input class="form-check-input me-2" type="checkbox" value="" aria-label="check for correct one">\
                                     </div>\
                                     \
                                     <input type="text" class="form-control" placeholder="Input answer"\
@@ -109,6 +109,12 @@ function addAnswerItem(answer) {
     let choiceList = answer.querySelector(".choiceList");
     let choice = choiceList.querySelector(".choice");
     let clone = choice.cloneNode(true);
+    clone.querySelector(".form-check-input").checked=false; //reset checked
+    clone.querySelector(".form-control").value=""; //reset input
+    clone.insertAdjacentHTML("beforeend", '<button type="button" class="btn-close my-auto mx-1" aria-label="delete"></button>');
+    clone.querySelector(".btn-close").addEventListener("click", () => {
+        clone.remove(); // add close btn for removing this choice item
+    });
     choiceList.appendChild(clone);
 };
 
