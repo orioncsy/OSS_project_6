@@ -18,11 +18,16 @@ Swot means 'study hard for test'
 ## Screenshots of App
 
 ### Start Page
+
+When you enter the page at first,
 ![image](./image/start_page.png)
 
 ### Make Test Page
+
+If you choose "Make Test", you can make subjective questions just like bellow.
 ![image](./image/Make_subjective_question.png)
 
+If you want to make objective questions just like bellow.
 ![image](./image/Make_objective_question.png)
 
 ### Take Test Page
