@@ -12,6 +12,10 @@
 Swot means 'study hard for test'
 ```
 
+## Quickstart  
+> Website Link:  
+> https://orioncsy.github.io/OSS_project_6/  
+
 ## Screenshots of App
 
 ### 1. Start Page
@@ -43,7 +47,7 @@ If you choose "Take Test", you can see the question and write answer.
 
 ## Installation Instruction & Guide Line
 
-```js
+```
   You can just enter to "https://orioncsy.github.io/OSS_project_6/" on your web browser.
 Then you can find the start page of our program.
 Once you enter the start page, you choose two function of app, "Make Tests Now" or "Take Tests Now".
