@@ -1,6 +1,3 @@
-.menu{
-    height: 4cm;
-}
 .logo{
     cursor: pointer;
     font-weight: bold;
@@ -22,11 +19,11 @@
 
 
 .answerSubject{
-    width: 20cm;
+    width: 90%;
 }
 
 .answerObject{
-    width: 20cm;
+    width: 80%;
 }
 
 
@@ -40,4 +37,9 @@
 
 body{
     background-color:whitesmoke;
+}
+
+.my-6 {
+    margin: 6rem 0;
+    
 }
