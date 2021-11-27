@@ -51,7 +51,7 @@ Once you enter the start page, you choose two function of app, "Make Tests Now" 
 You can write the question on the "question content" box and write the answer on "answer" box.
 Also you can enter the comment on "comment" box. If you want to answer as Objective.
 you can click on objective and answer the objective answers and check the right answer.
-  If you make more question click "add" button on bottom of page.
+  If you make more question click "add" button on bottom of page or remove question by trash bin icon.
 Then you can finish by clicking on "complete" button on the right side of "add" button.
 Now you can come back on the start page.
   If you click "Take Tests Now", you can take the tests.
