@@ -6,6 +6,10 @@
     font-weight: bold;
     font-size: 1cm;
 }
+.logoIcon{
+    width: 2rem; 
+    margin-bottom: 0.5rem;
+}
 
 .inst{
     font-size: 16px;
