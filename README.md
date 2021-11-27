@@ -41,7 +41,8 @@ If you want to make objective questions just like bellow.
 ## Installation Instruction & Guide Line
 
 ```js
-  You can just enter to "URL" on your web browser. Then you can find the start page of our program.
+  You can just enter to "https://orioncsy.github.io/OSS_project_6/" on your web browser.
+Then you can find the start page of our program.
 Once you enter the start page, you choose two function of app, "Make Tests Now" or "Take Tests Now".
   If you click "Make Tests Now", you can enroll the question.
 You can write the question on the "question content" box and write the answer on "answer" box.
@@ -49,7 +50,8 @@ Also you can enter the comment on "comment" box. If you want to answer as Object
 you can click on objective and answer the objective answers and check the right answer.
 Then you can decide the points of your question on top of right, directly or 2,3,4 points by option.
   If you make more question click "add" button on bottom of page.
-Then you can finish by clicking on "complete" button on the right side of "add" button. Then you can come back on the start page.
+Then you can finish by clicking on "complete" button on the right side of "add" button.
+Now you can come back on the start page.
   If you click "Take Tests Now", you can take the tests.
 you can see the question, points and enter your answer on "Answer" box.
 Also you can check the answer on the objective question.
