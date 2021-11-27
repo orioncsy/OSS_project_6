@@ -167,6 +167,5 @@ document.querySelectorAll(".btn-success").forEach(btn => {btn.addEventListener('
             sNum+=1;
         }
         localStorage.setItem(i+1, JSON.stringify(question))
-        alert(localStorage.getItem(i+1))
     }
 });})
