@@ -10,7 +10,9 @@ Dongkun Kim(kdk0@g.skku.edu, 2020312600)
 ## Name of Application
 
 ```js
-"Exam Take & Make"
+"SWOT : SoftWare Oriented Test"
+
+Swot means "study hard for test"
 ```
 
 ## Screenshots of App
@@ -19,6 +21,9 @@ Dongkun Kim(kdk0@g.skku.edu, 2020312600)
 ![image](./image/start_page.png)
 
 ### Make Test Page
+![image](./image/Make_subjective_question.png)
+
+![image](./image/Make_objective_question.png)
 
 ### Take Test Page
 
