@@ -12,6 +12,10 @@
 Swot means 'study hard for test'
 ```
 
+## Quickstart  
+> Website Link:  
+> https://orioncsy.github.io/OSS_project_6/  
+
 ## Screenshots of App
 
 ### 1. Start Page
