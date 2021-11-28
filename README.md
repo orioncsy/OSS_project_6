@@ -48,7 +48,7 @@ If you submit your answer, you can check the total scores as well as your answer
 ## Link to the demo video
 
 
-- [demo video]("https://www.youtube.com/watch?v=lRnVx6MePQs")
+- [demo video](https://www.youtube.com/watch?v=lRnVx6MePQs)
 
 
 ## Installation Instruction & Guide Line
