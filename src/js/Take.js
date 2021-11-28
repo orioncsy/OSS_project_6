@@ -88,7 +88,7 @@ document.querySelectorAll(".btn-success").forEach(btn => {btn.addEventListener('
                 if (node.checked){
                     answer.push(index+1);
             }})
-            localStorage.setItem('u'+i, answer);
+            localStorage.setItem('u'+i, JSON.stringify(answer));
             oNum+=1;
         }
         else{
