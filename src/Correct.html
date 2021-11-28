@@ -50,20 +50,20 @@
                 <div class="answerCorrect">
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Answer</label>
-                        <div class="answerBox Correct text-success">
+                        <div class="answerBox Correct form-control is-valid">
                             answer
                         </div>
-                        <div class="text-success mt-3">Right Answer!!</div>
+                        <div class="valid-feedback">Right Answer!!</div>
                     </div>
                 </div>
     
                 <div class="answerIncorrect">
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Answer</label>
-                        <div class="answerBox Correct text-danger">
+                        <div class="answerBox Correct form-control is-invalid">
                             answer
                         </div>
-                        <div class="text-danger mt-3">Wrong Answer!!</div>
+                        <div class="invalid-feedback">Wrong Answer!!</div>
                     </div>
                 </div>
 
@@ -109,25 +109,21 @@
     
                 
     
-                <div class="content mt-3 comment">
-                    <div class="mb-4">
-                        <label for="exampleFormControlInput1" class="form-label">Comment</label>
-                        <div class="contentBox">
-                            comment
-                        </div>
+                <div class="content mt-5 comment">
+                    <label for="exampleFormControlInput1" class="form-label">Comment</label>
+                    <div class="contentBox">
+                        comment
                     </div>
                 </div>
             </div>
         </div>
-        <div class="content mt-3 total">
-            <div class="mb-4">
-                <label for="exampleFormControlInput1" class="form-label">Total Score</label>
-                <div class="scoreBox">
-                    total score
-                </div>
+        <div class="content total">
+            <label for="exampleFormControlInput1" class="form-label">Total Score</label>
+            <div class="scoreBox">
+                total score
             </div>
         </div>
-        <button type="button" class="btn btn-success mt-5" onClick="location.href='../index.html'">Home</button>
+        <button type="button" class="btn btn-success my-5" onClick="location.href='../index.html'">Home</button>
     </div>
 
     <script type="text/javascript" src="js/Correct.js"></script>

@@ -3,7 +3,7 @@ let qCount = localStorage.getItem('qNum'); // 출제한 문제 개수
 function displaySubQ (question, num) {
     let questionList = document.querySelector(".questionList");
     let newQ = document.createElement("div");
-    newQ.className = "question";
+    newQ.className = "question my-6";
 
     //문제 번호 출력
     let numOfQ = document.querySelector(".mt-4").cloneNode(true);
@@ -26,7 +26,7 @@ function displaySubQ (question, num) {
 function displayObjQ (question, num) {
     let questionList = document.querySelector(".questionList");
     let newQ = document.createElement("div");
-    newQ.className = "question";
+    newQ.className = "question my-6";
 
     //문제 번호 입력
     let numOfQ = document.querySelector(".mt-4").cloneNode(true);
