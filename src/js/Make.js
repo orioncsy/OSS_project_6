@@ -12,38 +12,39 @@ function addSbjQuestion() {
     div.className = "question my-6";
     
     let qtextwrapper = document.createElement("div");
-    qtextwrapper.innerHTML = '<span class="qtext">Question ' + (qidx) + '</span>\
-                              <button type="button" class="btn btn-outline-danger mt-4 me-3 float-end" aria-label="delete Question" title="Delete this Question"><i class="bi bi-trash"></i></button>';
+    qtextwrapper.innerHTML =   `<span class="qtext">Question ` + (qidx) + `</span>
+                                <button type="button" class="btn btn-outline-danger mt-4 me-3 float-end" aria-label="delete Question" title="Delete this Question">
+                                    <i class="bi bi-trash"></i></button>`;
     qtextwrapper.querySelector(".btn").addEventListener("click", () => {
         qtextwrapper.parentElement.remove(); // add close btn for removing this choice item
     });
     div.appendChild(qtextwrapper);
     qarea.appendChild(div);
 
-    div.insertAdjacentHTML("beforeend",'<div class="type mt-4">\
-                                            <div class="d-flex justify-content-between">\
-                                                <div class="btn-group mb-4 qtypeSelect" role="group" aria-label="Basic radio toggle button group">\
-                                                    <input class="btn btn-outline-primary", type="button", value="Objective">\
-                                                    <input class="btn btn-primary", type="button", value="Subjective">\
-                                                </div>\
-                                            </div>\
-                                        </div>\
-                                        <div class="content">\
-                                            <div class="mb-4">\
-                                                <label for="exampleFormControlTextarea1" class="form-label">Question content</label>\
-                                                <textarea class="form-control" id="content" rows="3" placeholder="Enter your question"></textarea>\
-                                        </div></div>\
-                                        <div class="answerSubject mb-5">\
-                                            <div>\
-                                                <label for="exampleFormControlInput1" class="form-label">Answer</label>\
-                                                <input type="text" class="form-control answerS" placeholder="Enter your answer">\
-                                        </div></div>\
-                                        \
-                                        <div class="comment">\
-                                            <div class="mb-3 mt-3">\
-                                                <label for="exampleFormControlTextarea1" class="form-label">Comment</label>\
-                                                <textarea class="form-control comment" rows="3"></textarea>\
-                                        </div></div>');
+    div.insertAdjacentHTML("beforeend",`<div class="type mt-4">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="btn-group mb-4 qtypeSelect" role="group" aria-label="Basic radio toggle button group">
+                                                    <input class="btn btn-outline-primary", type="button", value="Objective">
+                                                    <input class="btn btn-primary", type="button", value="Subjective">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="mb-4">
+                                                <label for="exampleFormControlTextarea1" class="form-label">Question content</label>
+                                                <textarea class="form-control" id="content" rows="3" placeholder="Enter your question"></textarea>
+                                        </div></div>
+                                        <div class="answerSubject mb-5">
+                                            <div>
+                                                <label for="exampleFormControlInput1" class="form-label">Answer</label>
+                                                <input type="text" class="form-control answerS" placeholder="Enter your answer">
+                                        </div></div>
+                                        
+                                        <div class="comment">
+                                            <div class="mb-3 mt-3">
+                                                <label for="exampleFormControlTextarea1" class="form-label">Comment</label>
+                                                <textarea class="form-control comment" rows="3"></textarea>
+                                        </div></div>`);
 
     qtypeHandler(div); //add event listener
     qidx++;
@@ -67,20 +68,20 @@ function qtypeHandler(question) {
     
         let answer = question.querySelector(".answerSubject");
         answer.className = "answerObject mb-5";
-        answer.innerHTML = '<div class="mb-2 choiceList">\
-                                <label for="exampleFormControlInput1" class="form-label">Answer</label>\
-                                <div class="input-group choice">\
-                                    <div class="input-group-text">\
-                                        <input class="form-check-input me-2" type="checkbox" value="" aria-label="check for correct one">\
-                                    </div>\
-                                    \
-                                    <input type="text" class="form-control" placeholder="Input answer"\
-                                        aria-label="Input group example" aria-describedby="btnGroupAddon">\
-                                </div>\
-                            </div>\
-                            <div>\
-                            <button type="button" class="btn btn-link btn-sm addItem"> Add more...</button>\
-                            </div>';
+        answer.innerHTML = `<div class="mb-2 choiceList">
+                                <label for="exampleFormControlInput1" class="form-label">Answer</label>
+                                <div class="input-group choice">
+                                    <div class="input-group-text">
+                                        <input class="form-check-input me-2" type="checkbox" value="" aria-label="check for correct one">
+                                    </div>
+                                    
+                                    <input type="text" class="form-control" placeholder="Input answer"
+                                        aria-label="Input group example" aria-describedby="btnGroupAddon">
+                                </div>
+                            </div>
+                            <div>
+                            <button type="button" class="btn btn-link btn-sm addItem"> Add more...</button>
+                            </div>`;
 
         answer.querySelector(".addItem").addEventListener("click", () => addAnswerItem(answer)); //TODO: 중복 없애기
         //add event listener
@@ -92,10 +93,10 @@ function qtypeHandler(question) {
     
         let answer = question.querySelector(".answerObject");
         answer.className = "answerSubject mb-5";
-        answer.innerHTML = '<div>\
-                                <label for="exampleFormControlInput1" class="form-label">Answer</label>\
-                                <input type="text" class="form-control answerS" placeholder="Enter your answer">\
-                            </div>';
+        answer.innerHTML = `<div>
+                                <label for="exampleFormControlInput1" class="form-label">Answer</label>
+                                <input type="text" class="form-control answerS" placeholder="Enter your answer">
+                            </div>`;
     
     });
     
@@ -114,7 +115,7 @@ function addAnswerItem(answer) {
     let clone = choice.cloneNode(true);
     clone.querySelector(".form-check-input").checked=false; //reset checked
     clone.querySelector(".form-control").value=""; //reset input
-    clone.insertAdjacentHTML("beforeend", '<button type="button" class="btn-close my-auto mx-1" aria-label="delete item" title="Delete this answer choice"></button>');
+    clone.insertAdjacentHTML("beforeend", `<button type="button" class="btn-close my-auto mx-1" aria-label="delete item" title="Delete this answer choice"></button>`);
     clone.querySelector(".btn-close").addEventListener("click", () => {
         clone.remove(); // add close btn for removing this choice item
     });
@@ -166,7 +167,7 @@ document.querySelectorAll(".btn-success").forEach(btn => {btn.addEventListener('
             let choice = []
             choiceList[oNum].querySelectorAll(".form-control").forEach((node) => {
                 choice.push(node.value);
-                console.log('value: ' + node.value);
+                // console.log('value: ' + node.value);
                 if ( !node.value ) {
                     isAllValid = false;
                     node.classList.add("is-invalid");
