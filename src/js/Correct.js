@@ -124,12 +124,6 @@ function displayObjQ (question, num) {
         choiceList.innerHTML += `<div class="text-danger mt-3">Wrong Answer!!</div>`
         newQ.appendChild(choiceList);    
     }
-
-    //해설 출력
-    let comment = document.querySelector(".comment").cloneNode(true);
-    comment.querySelector(".contentBox").innerHTML = question.comment;
-    newQ.appendChild(comment);
-    
     //문제를 문제 리스트에 추가
     questionList.appendChild(newQ);
 }
