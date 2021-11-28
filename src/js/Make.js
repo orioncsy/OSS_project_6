@@ -142,9 +142,15 @@ document.querySelectorAll(".btn-success").forEach(btn => {btn.addEventListener('
     //객관식 정답 저장
     let choiceList = document.querySelectorAll(".answerObject .choiceList");
 
+    let pastinvalid = document.querySelectorAll(".is-invalid");
+    pastinvalid.forEach(node=> node.classList.remove("is-invalid"));
+    let pastFeedback = document.querySelectorAll(".invalid-feedback, .text-danger");
+    pastFeedback.forEach(node=>node.remove());
+
     let qNum = typeList.length; //문제 개수 저장
     let sNum = 0, oNum = 0; // 주관식 개수, 객관식 개수
     localStorage.setItem('qNum', qNum);
+    let isAllValid = true;
     for (let i = 0; i < qNum; i++){
         let question = {}
         let qType = typeList[i].value
@@ -160,15 +166,37 @@ document.querySelectorAll(".btn-success").forEach(btn => {btn.addEventListener('
             let choice = []
             choiceList[oNum].querySelectorAll(".form-control").forEach((node) => {
                 choice.push(node.value);
+                console.log('value: ' + node.value);
+                if ( !node.value ) {
+                    isAllValid = false;
+                    node.classList.add("is-invalid");
+                    node.parentNode.insertAdjacentHTML("beforeend", `<div class="invalid-feedback mb-1">Please enter the answer.</div>`);
+                }
             })
             question.answer = answer
             question.choice = choice
+            if ( question.answer.length === 0 ){
+                isAllValid = false;
+                choiceList[oNum].querySelectorAll(".form-check-input").forEach(node => {
+                    node.classList.add("is-invalid");
+                });
+                choiceList[oNum].parentNode.insertAdjacentHTML("beforeend" ,`<div class="text-danger mt-3" style="font-size:0.875rem">At least 1 answer should be checked.</div>`);
+            }
             oNum+=1;
         }
         else{
             question.answer = subAnsList[sNum].value
+            // console.log(question.answer);
+            if ( !question.answer ) {
+                isAllValid = false;
+                subAnsList[sNum].classList.add("is-invalid");
+                subAnsList[sNum].insertAdjacentHTML("afterend", `<div class="invalid-feedback">Please enter the answer.</div>`);
+            }
             sNum+=1;
         }
         localStorage.setItem(i+1, JSON.stringify(question))
+    }
+    if(isAllValid){
+        location.href='../index.html';
     }
 });})
