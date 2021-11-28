@@ -117,6 +117,10 @@ function displayObjQ (question, num) {
             </div>`
             }
         }
+        if(uAnswer==='[]'){
+            //답안 미선택 오답
+            choiceList.innerHTML += `<div class="text-danger mt-3" style="font-size:0.875rem">Wrong Answer!!</div>`;
+        }
         newQ.appendChild(choiceList);    
     }
     //해설 출력
