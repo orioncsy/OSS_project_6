@@ -26,13 +26,13 @@ When you enter the page at first,
 ### 2. Make Test Page
 
 If you choose "Make Test", you can make subjective questions just like bellow.
-![image](./image/Capture02_MakeTestPage-1.png)
+![image](./image/Capture02_MakeTestPage-1.PNG)
 
 If you want to make objective questions just like bellow.
-![image](./image/Capture03_MakeTestPage-2.png)
+![image](./image/Capture03_MakeTestPage-2.PNG)
 
 The Answer shouldn't be empty.
-![image](./image/Capture04_MakeTestPage-3.png)
+![image](./image/Capture04_MakeTestPage-3.PNG)
 
 ### 3. Take Test Page
 
