@@ -1,15 +1,16 @@
 # OSS_project_6
 
 ## Team No.6 Members
-- Seung-yun Chae(orioncsy@g.skku.edu, 2015312350)
-- Jiwan Park(wldhks302@g.skku.edu, 2015318837)
-- Dongkun Kim(kdk0@g.skku.edu, 2020312600)
+- Seung-yun Chae(orioncsy@g.skku.edu, 2015312350) [@orioncsy](https://github.com/orioncsy)
+- Jiwan Park(wldhks302@g.skku.edu, 2015318837) [@jyani96](https://github.com/jyani96)
+- Dongkun Kim(kdk0@g.skku.edu, 2020312600) [@GunderGie](https://github.com/GunderGie)  
++ _[Check here](https://github.com/orioncsy/OSS_project_6#contribution) to see the parts each member has taken._
 
 ## Name of Application
 
 ```js
-"SWOT : SoftWare Oriented Test"
-Swot means 'study hard for test'
+"SWOT : SoftWare-Oriented Test"
+Swot means 'to study hard for test'.
 ```
 
 ## Quickstart  
@@ -72,5 +73,9 @@ Also, the page will show the comment and total score as numbers of right answers
 If you want to go back the start page, you can just click on "Home" button on the bottom of the page. 
 ```
 
-
+## Contribution
+- **Seung-yun Chae**: HTML, CSS, Documentation
+- **Jiwan Park**: JavaScript, Demo video, Documentation
+- **Dongkun Kim**: UI&Logo Design, JavaScript, Documentation  
+> You can check the detail role in implementation ToDoList [here](https://github.com/orioncsy/OSS_project_6/issues/2), which shows who developed which features.
 
