@@ -21,22 +21,27 @@ Swot means 'study hard for test'
 ### 1. Start Page
 
 When you enter the page at first,
-![image](./image/start_page.png)
+![image](./image/Capture01_StartPage.PNG)
 
 ### 2. Make Test Page
 
 If you choose "Make Test", you can make subjective questions just like bellow.
-![image](./image/Make_subjective_question.png)
+![image](./image/Capture02_MakeTestPage-1.png)
 
 If you want to make objective questions just like bellow.
-![image](./image/Make_objective_question.png)
+![image](./image/Capture03_MakeTestPage-2.png)
+
+The Answer shouldn't be empty.
+![image](./image/Capture04_MakeTestPage-3.png)
 
 ### 3. Take Test Page
 
 If you choose "Take Test", you can see the question and write answer.
-![image](./image/Take_test.png)
+![image](./image/Capture05_TakeTestPage.PNG)
 
 ### 4. Correct System Page
+If you submit your answer, you can check the total scores as well as your answers with comments.
+![image](./image/Capture06_TestResultPage.PNG)
 
 
 ## Link to the demo video
